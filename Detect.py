@@ -112,11 +112,11 @@ except KeyboardInterrupt:
 sys.exit(0)
 msg = “Person had met with an Accident at location “+loc
 print(msg)
-accSID = “AC821bb7e081d4aa86fb95afe79189b26f”
-authToken = “3dbe85b32f9cfbd3e57be2e1e6a8fa01”
+accSID = “AccIDOfTwilio”
+authToken = “AuthToken”
 client = Client(accSID, authToken)
 message = 
-client.api.account.messages.create(to=”+919949286689”,from_=”+17315357765”,body=msg
+client.api.account.messages.create(to=”NUMBER”,from_=”NUMBER”,body=msg
 )
 return True
 else:
